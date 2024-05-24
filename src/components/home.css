@@ -1,0 +1,147 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  :root {
+    --orange-gradient: linear-gradient(90deg, rgb(33, 166, 255) 0%, rgb(21, 102, 134) 100%);
+    --blue: #1e90ff;
+   
+  }
+  
+  * {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  .hero-wrapper {
+    color: white;
+    position: relative;
+    padding-bottom: 2rem;
+    background-color: black;
+    padding: 2rem;
+  }
+  
+  .inner-width {
+    max-width: 1200px;
+    margin: 0 auto;
+    width: 100%;
+  }
+  
+  .flex-center {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  .hero-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    flex-wrap: wrap;
+  }
+  
+  .hero-left {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 1.5rem;
+    z-index: 1;
+  }
+  
+  .hero-title {
+    position: relative;
+  }
+  
+  .hero-title h1 {
+    font-weight: 600;
+    font-size: 3.8rem;
+    line-height: 1.2;
+  }
+  
+  .hero-description span {
+    font-size: 1.2rem;
+    margin-bottom: 0.5rem;
+  }
+  
+  .search-bar {
+    margin-top: 1rem;
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+    border: 1px solid rgb(50, 176, 226);
+    border-radius: 0.5rem;
+    padding: 0.5rem 1rem;
+    width: 600px;
+  }
+  
+  .location-icon {
+    color: var(--blue);
+  }
+  
+  .search-bar input {
+    border: none;
+    outline: none;
+    padding: 0.5rem;
+    flex-grow: 1;
+  }
+  
+  .search-bar .button {
+    padding: 0.5rem 1rem;
+    border: none;
+    background-color: var(--blue);
+    color: white;
+    border-radius: 0.5rem;
+    cursor: pointer;
+  }
+  
+  .hero-right {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  .image-container {
+    width: 30rem;
+    height: 35rem;
+    overflow: hidden;
+    border-radius: 15rem 15rem 0 0;
+    border: 2px solid rgba(255, 255, 255, 0.5);
+  }
+  
+  .image-container img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+  }
+  
+  .orange-circle {
+    height: 4rem;
+    width: 4rem;
+    background: var(--orange-gradient);
+    border-radius: 50%;
+    position: absolute;
+    right: -6%;
+    top: -4%;
+    z-index: -1;
+  }
+  
+  .stats {
+    display: flex;
+    gap: 2rem;
+    margin-top: 2rem;
+  }
+  
+  .stats-item {
+    text-align: center;
+  }
+  
+  .count {
+    font-size: 2rem;
+    font-weight: bold;
+    color:rgb(15, 211, 218);
+  }
+ 
